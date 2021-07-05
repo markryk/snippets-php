@@ -11,6 +11,8 @@
 		//print_r($_SERVER);
 		fwrite($file, $json);
 	}
-	echo "Arquivo criado, verifique na pasta.";
+	echo "Arquivo criado, verifique na pasta";
+	echo "<br>";
+	echo "Nome do arquivo: \"Variavel Server de ".$_SERVER['REMOTE_ADDR']." e ".$_SERVER['SERVER_ADDR'].".php\"";
 	fclose($file);
 ?>
